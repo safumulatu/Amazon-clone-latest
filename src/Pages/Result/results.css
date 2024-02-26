@@ -1,0 +1,35 @@
+.products_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    max-width: 1450px;
+    margin: 100px auto 100px auto;
+    gap: 50px;
+    justify-items: center;
+}
+
+.products_container section {
+    margin: 0 auto;
+}
+
+
+/* .products_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1450px;
+  margin: 100px auto;
+}
+
+.products_container section {
+  flex: 1 1 250px;
+  /* Minimum width of 250px, grow and shrink as needed */
+
+max-width: 300px;
+
+/* Maximum width to maintain aspect ratio */
+
+margin: 0 auto;
+
+}
+*/
