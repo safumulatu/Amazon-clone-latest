@@ -1,13 +1,11 @@
-import  { useContext } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { SlLocationPin } from "react-icons/sl";
 import { BsSearch } from "react-icons/bs";
 import LowerHeader from "./LowerHeader";
 import { BiCart } from "react-icons/bi";
 import { DataContext } from "../DataProvider/DataProvider";
-import logo from '../../assets/logo.png'
 import './Header.css'
-import americaflag from '../../assets/americaflag.png'
 
 const TestHead = () => {
   const [{ user, basket }, dispatch] = useContext(DataContext);
@@ -23,7 +21,7 @@ const TestHead = () => {
           <div className='logo__container'>
             <Link to="/">
               <img
-                src={logo}
+                src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
                 alt="amazon logo"
               />
             </Link>
@@ -49,8 +47,8 @@ const TestHead = () => {
           <div className='order__container'>
             <Link to="" className='language'>
               <img
-                src={americaflag}
-                alt="american flag"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1024px-Flag_of_the_United_States.svg.png"
+                alt=""
               />
 
               <select name="" id="">
@@ -78,12 +76,10 @@ const TestHead = () => {
               <p>returns</p>
               <span>& Orders</span>
             </Link>
-            <div className="cart-flex">
             <Link to="/cart" className='cart'>
               <BiCart size={35} />
               <span>{totalItem}</span>
             </Link>
-            </div>
           </div>
         </div>
       </section>
