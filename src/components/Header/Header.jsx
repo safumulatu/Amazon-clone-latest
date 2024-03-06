@@ -8,6 +8,7 @@ import { DataContext } from "../DataProvider/DataProvider";
 import logo from '../../assets/logo.png'
 import './Header.css'
 import americaflag from '../../assets/americaflag.png'
+import { auth } from "../../Utility/Firebase";
 
 const TestHead = () => {
   const [{ user, basket }, dispatch] = useContext(DataContext);

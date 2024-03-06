@@ -33,7 +33,7 @@ function ProductCard({product,flex,renderDesc,renderAdd}) {
           <small>{rating?.count}</small>
         </div>
         <div>
-          <CurrencyFormat amount={price} />
+             <CurrencyFormat  amount={price} />
         </div>
         {renderAdd &&
           <button className='button' onClick={addToCart}>
